@@ -7,4 +7,5 @@ class Job(models.Model):
     image = models.ImageField(upload_to='images/')
     title = models.CharField(max_length=200)
     summary = models.CharField(max_length=200)
-    link = models.URLField(max_length=200, null=True)
+    gitlink = models.URLField(max_length=200, null=True)
+    weblink = models.URLField(max_length=200, null=True)
