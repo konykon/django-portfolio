@@ -28,9 +28,9 @@
                 <div class="navigation__item">
                     <a href="#" class="navigation__link">
                         <input class="accordion-input" type="checkbox" id="title1" />
-                        <label class="accordion-label" for="title1">-Curiculum-</label>
+                        <label class="accordion-label" for="title1">-Curriculum-</label>
                         <div class="accordion-content">
-                            <embed class="pdf" src="../../static/document.pdf" />
+                            <embed class="pdf" src="../../static/cv.pdf" />
                         </div>
                     </a>
                 </div>
@@ -87,8 +87,8 @@
                                 <div class="card__plate">
                                     <p class="card__plate-title">{{ job.title }}</p>
                                     <p class="card__plate-description">{{ job.summary }}</p>
-                                    <a class="btn" target="blank" href="{{ job.link }}">Ver Github</a><br>
-                                    <a class="btn" target="blank" href="{{ job.link }}">Ver Página Web</a>
+                                    <a class="btn" target="blank" href="{{ job.gitlink }}">Ver Github</a><br>
+                                    <a class="btn" target="blank" href="{{ job.weblink }}">Ver Página Web</a>
                                 </div>
                             </div>
                         </div>
