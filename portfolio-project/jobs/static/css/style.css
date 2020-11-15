@@ -227,9 +227,9 @@ body {
     text-transform: capitalize;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 56.25em) {
     .accordion-content{
-        margin-bottom: 5rem;
+        margin-bottom: 10rem;
     }
 }
 
@@ -480,7 +480,7 @@ body {
 
 @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .section-projects {
-        margin-bottom: 25rem;
+        margin-bottom: 5rem;
     }
     
     .card {
