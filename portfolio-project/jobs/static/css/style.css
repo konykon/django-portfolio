@@ -227,6 +227,12 @@ body {
     text-transform: capitalize;
 }
 
+@media only screen and (max-width: 37.5em) {
+    .accordion-content{
+        margin-bottom: 5rem;
+    }
+}
+
 .accordion-input+.accordion-label+.accordion-content {
     display: none;
 }
@@ -343,12 +349,12 @@ body {
 @media only screen and (max-width: 37.5em) {
     .heading-primary--main {
         letter-spacing: 1rem;
-        font-family: 5rem; } 
+        font-size: 3.5rem; } 
     }
     
     .heading-primary--sub {
         display: block;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 700;
         letter-spacing: 1.45rem;
         animation: moveInRight 1s ease-out; 
@@ -358,6 +364,7 @@ body {
     .heading-primary--sub {
         letter-spacing: .5rem; } 
     }
+
                                   
 .card {
     perspective: 150rem;
@@ -455,23 +462,27 @@ body {
     text-align: center; 
 }
 
-.card__plate {
+.card__project {
     text-align: center;
     color: #fff;
     margin-bottom: 8rem; 
 }
 
-.card__plate-title {
+.card__project-title {
     font-size: 3rem;
     font-weight: 100; 
 }
 
-.card__plate-description {
+.card__project-description {
     font-size: 1.4rem; 
     margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    .section-projects {
+        margin-bottom: 5rem;
+    }
+    
     .card {
         height: auto;
         border-radius: 3px;
@@ -507,21 +518,27 @@ body {
         padding: 7rem 4rem 4rem 4rem; 
     }
     
-    .card__plate {
+    .card__project {
         margin-bottom: 3rem; 
     }
     
-    .card__plate-title {
-        font-size: 4rem; } 
-    }
+    .card__project-title {
+        font-size: 3.5rem; 
+    } 
 
-    .row {
-        max-width: 114rem;
-        margin: 0 auto; }
-    
-    .row:not(:last-child) {
-        margin-bottom: 8rem; 
+    .btn {
+        font-size: 1.5rem;
     }
+}
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto; 
+}
+    
+.row:not(:last-child) {
+    margin-bottom: 8rem; 
+}
     
     @media only screen and (max-width: 56.25em) {
         .row:not(:last-child) {

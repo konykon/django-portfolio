@@ -10,7 +10,7 @@
     <title>Konstantina</title>
 
     <link rel="stylesheet" href="../../static/css/style.css">
-
+    <link rel="shortcut icon" type="image/png" href="../../static/images/logo.png">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
                         <input class="accordion-input" type="checkbox" id="title1" />
                         <label class="accordion-label" for="title1">-Curriculum-</label>
                         <div class="accordion-content">
-                            <embed class="pdf" src="../../static/cv.pdf" />
+                            <embed class="pdf" src="../../static/images/CV-portfolio.pdf" />
                         </div>
                     </a>
                 </div>
@@ -71,7 +71,7 @@
     </header>
 
     <main>
-        <section class="section-plates" id="section-plates">
+        <section class="section-projects" id="section-projects">
             <div class="row">
                 {% for job in jobs.all %}
                 <div class="col-1-of-3">
@@ -84,9 +84,9 @@
                         </div>
                         <div class="card__side card__side--back card__side--back">
                             <div class="card__cta">
-                                <div class="card__plate">
-                                    <p class="card__plate-title">{{ job.title }}</p>
-                                    <p class="card__plate-description">{{ job.summary }}</p>
+                                <div class="card__project">
+                                    <p class="card__project-title">{{ job.title }}</p>
+                                    <p class="card__project-description">{{ job.summary }}</p>
                                     <a class="btn" target="blank" href="{{ job.gitlink }}">Ver Github</a><br>
                                     <a class="btn" target="blank" href="{{ job.weblink }}">Ver Página Web</a>
                                 </div>
